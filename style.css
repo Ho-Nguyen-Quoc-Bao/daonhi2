@@ -1,0 +1,56 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 300;
+    margin: 0;
+}
+.title{
+    text-align: center;
+    background: #333;
+    color: pink;
+    padding: 0.3cm 1cm;
+}
+.content,
+.main{
+    padding: 0.3cm 0.3cm;
+}
+.content{
+    background: gold;
+    padding: 0.3cm 0.5cm;
+    margin-bottom: 0.2cm;
+}
+.imgs img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.4%;
+}
+
+
+/* RESPONSIVE MOBILE */
+@media screen and (min-width: 600px) {
+    .main:before, .main:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .main{
+        max-width: 100%;
+    }
+    .content{
+        width: 63.5%;
+        float: left;
+        margin-right: 1.5%;
+    }
+
+
+}
+@media screen and (min-width: 1024px) {
+    .content{
+        max-width: 1280px;
+        margin: 0 auto;
+    }    
+    .imgs{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
